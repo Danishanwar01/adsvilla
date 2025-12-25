@@ -1,0 +1,59 @@
+.style_step2__r4rNG .style_cards__kFPFT {
+    display: grid;
+    gap: calc(var(--1)*28)
+}
+
+.style_step2__r4rNG .style_cards__kFPFT>div>div {
+    width: 100%
+}
+
+.style_step2__r4rNG .style_cards__kFPFT .style_card__iBbRS {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--1)*20);
+    align-items: center
+}
+
+.style_step2__r4rNG .style_cards__kFPFT .style_card__iBbRS .style_desc__98en9 {
+    width: calc(var(--1)*800);
+    max-width: 100%;
+    text-align: left;
+    color: #c1cade;
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--1)*10)
+}
+
+.style_step2__r4rNG .style_cards__kFPFT .style_card__iBbRS .style_desc__98en9 a {
+    text-decoration: underline;
+    text-underline-offset: calc(var(--1)*4)
+}
+
+.style_step2__r4rNG .style_cards__kFPFT .style_card__iBbRS .style_desc__98en9 a:hover {
+    color: var(--primary)
+}
+
+.style_step2__r4rNG .style_cards__kFPFT .style_card__iBbRS .style_desc__98en9 ul {
+    list-style: disc;
+    margin-left: calc(var(--1)*20);
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--1)*10)
+}
+
+.style_step2__r4rNG .style_cards__kFPFT .style_card__iBbRS .style_icons__VD5dV {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(var(--1)*6);
+    max-width: calc(var(--1)*352);
+    padding-inline: calc(var(--1)*40);
+    justify-content: center
+}
+
+.style_step2__r4rNG .style_cards__kFPFT .style_card__iBbRS .style_icons__VD5dV img {
+    width: calc(var(--1)*44);
+    height: calc(var(--1)*35);
+    -o-object-fit: contain;
+    object-fit: contain
+}

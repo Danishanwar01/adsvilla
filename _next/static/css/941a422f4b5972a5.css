@@ -1,0 +1,10 @@
+.style_instructions__Bjjqs .style_container__urq58 {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--1)*40)
+}
+
+.style_instructions__Bjjqs .style_eventLogos__jVtMV {
+    margin-block: calc(var(--1)*10);
+    width: 100%
+}

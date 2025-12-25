@@ -1,0 +1,105 @@
+.style_hero__mYfm4 {
+    position: relative;
+    height: calc(var(--1)*800);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: var(--color-primary-dark)
+}
+
+@media(max-width:991.98px) {
+    .style_hero__mYfm4 {
+        height: calc(var(--1)*800);
+        align-items: flex-start
+    }
+}
+
+.style_hero__mYfm4 .style_bg__s1Mgq {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    z-index: 0;
+    opacity: 1
+}
+
+.style_hero__mYfm4 .style_bg__s1Mgq:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, var(--color-primary-dark) 0, transparent 100%)
+}
+
+@media(max-width:991.98px) {
+    .style_hero__mYfm4 .style_mobileBg__5h1Cy {
+        position: absolute;
+        inset: 0;
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        z-index: 0;
+        opacity: 1
+    }
+
+    .style_hero__mYfm4 .style_mobileBg__5h1Cy:after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, var(--color-primary-dark) 0, transparent 100%)
+    }
+}
+
+.style_hero__mYfm4 .style_content__j1ii5 {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--1)*24);
+    color: #fff
+}
+
+@media(max-width:991.98px) {
+    .style_hero__mYfm4 .style_content__j1ii5 {
+        gap: calc(var(--1)*16);
+        text-align: center;
+        align-items: center
+    }
+}
+
+.style_hero__mYfm4 .style_title__NJK4s {
+    margin: 0;
+    max-width: calc(var(--1)*700);
+    font-size: calc(var(--1)*80) !important
+}
+
+@media(max-width:991.98px) {
+    .style_hero__mYfm4 .style_title__NJK4s {
+        font-size: calc(var(--1)*36) !important
+    }
+}
+
+.style_hero__mYfm4 .style_description__gT2hU {
+    font-size: calc(var(--1)*18);
+    line-height: 1.5;
+    opacity: .8;
+    margin: 0;
+    max-width: calc(var(--1)*700)
+}
+
+@media(max-width:991.98px) {
+    .style_hero__mYfm4 .style_description__gT2hU {
+        font-size: calc(var(--1)*16)
+    }
+}
+
+.style_hero__mYfm4 .style_button__BA_cw {
+    margin-top: calc(var(--1)*32)
+}
+
+@media(max-width:991.98px) {
+    .style_hero__mYfm4 .style_button__BA_cw {
+        font-size: calc(var(--1)*16);
+        margin-top: calc(var(--1)*0)
+    }
+}
