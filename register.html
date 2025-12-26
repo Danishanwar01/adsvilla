@@ -1,10 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
 <head>
     <meta charSet="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <title>Register | ADSVILLA - Next-gen Layer 1</title>
+    <link rel="preload" href="_next/static/media/13971731025ec697-s.p.woff2" as="font" crossorigin=""
+        type="font/woff2" />
+    <link rel="preload" href="_next/static/media/6ca6224f9376cc31-s.p.woff2" as="font" crossorigin=""
+        type="font/woff2" />
+    <link rel="preload" href="_next/static/media/e4af272ccee01ff0-s.p.woff2" as="font" crossorigin=""
+        type="font/woff2" />
+    <link rel="preload" as="image" href="images/new/logo.jpeg" fetchPriority="high" />
+    <link rel="preload" as="image"
+        href="https://www.facebook.com/tr?id=2515465071969410&amp;ev=PageView&amp;noscript=1" />
+    <link rel="stylesheet" href="_next/static/css/834b691b0616c145.css" data-precedence="next" />
+    <link rel="stylesheet" href="_next/static/css/c28322f7012c3e40.css" data-precedence="next" />
+    <link rel="stylesheet" href="_next/static/css/9cdfbf73fd41ba04.css" data-precedence="next" />
+    <link rel="stylesheet" href="_next/static/css/21665dc4a106b40f.css" data-precedence="next" />
+    <link rel="stylesheet" href="_next/static/css/3a43a33286708214.css" data-precedence="next" />
+    <link rel="stylesheet" href="_next/static/css/3871c2a78f6d69cd.css" data-precedence="next" />
+    <link rel="stylesheet" href="_next/static/css/7b614f8408f1a409.css" data-precedence="next" />
+    <link rel="stylesheet" href="_next/static/css/e43ebb0b48337b5e.css" data-precedence="next" />
+    <link rel="stylesheet" href="_next/static/css/fd0f2dfeb7f8a0d7.css" data-precedence="next" />
+    <link rel="preload" as="script" fetchPriority="low" href="_next/static/chunks/webpack-33d67cc6c21588c7.js" />
+    <link rel="preload" href="../play.vidyard.com/embed/v4.js" as="script" />
+    <link rel="preload" href="https://www.googletagmanager.com/gtag/js?id=AW-16474916988" as="script" />
+    <link rel="preload" href="https://www.googletagmanager.com/gtag/js?id=G-P9149C6JZL" as="script" />
+    <link rel="preload" href="../coinzillatag.com/lib/performance.js" as="script" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>Register adsvilla.net : Earn money from ads, tasks, surveys and apps</title>
     <meta name="description"
         content="Adsvilla is a trusted Paid-to-Click (PTC) platform where you can earn online by clicking ads, engaging with offers, and turning your spare time into real income from home." />
     <link rel="canonical" href="index.html" />
@@ -19,8 +46,8 @@
     <link rel="apple-touch-icon" href="apple-icon1b22.png?568667d4a8fa6916" type="image/png" sizes="97x92" />
     <meta name="next-size-adjust" />
 
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="_next/static/chunks/polyfills-78c92fac7aa8fdd8.js" noModule=""></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
         :root {
@@ -43,7 +70,7 @@
             align-items: center;
             justify-content: center;
             padding: 20px;
-        
+
             background: #030D43;
         }
 
@@ -72,10 +99,10 @@
             outline: none;
             box-sizing: border-box;
             font-size: 16px;
-           
+
         }
 
-      
+
         .input-row {
             display: flex;
             gap: 10px;
@@ -106,13 +133,7 @@
             margin-bottom: 15px;
         }
 
-        /* Footer Styles */
-        .style_footer__gp24T {
-            padding: 40px 20px;
-            background: #030D43;
-            text-align: center;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
+
 
         .style_socialList__9gkGN {
             display: flex;
@@ -164,7 +185,7 @@
 
             .style_title__VJGg6 {
                 font-size: 22px;
-              
+
             }
         }
 
@@ -176,46 +197,183 @@
         a:hover {
             opacity: 0.8;
         }
-         .style_section__09_zn {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+
+        .style_section__09_zn {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
 
 
-    background: 
-        linear-gradient(
-            rgba(3, 13, 67, 0.75),
-            rgba(3, 13, 67, 0.75)
-        ),
-        url("images/new/login2.png");
+            background:
+                linear-gradient(rgba(3, 13, 67, 0.75),
+                    rgba(3, 13, 67, 0.75)),
+                url("images/new/login2.png");
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* ===== Validation Styles ===== */
+        .error-text {
+            color: #ff4d4f;
+            font-size: 13px;
+            margin-top: -10px;
+            margin-bottom: 10px;
+            display: none;
+        }
+
+        .input-error {
+            border-color: #ff4d4f !important;
+        }
+
+        .input-row>div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .terms-row input[type="checkbox"] {
+            width: auto !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            margin-right: 6px;
+            flex-shrink: 0;
+            margin-bottom: 20px !important;
+        }
+
+        .navbar-brand img {
+            height: 180px;
+            width: auto;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link {
+            color: #fff !important;
+            font-weight: 600;
+            margin: 0 10px;
+        }
+
+        .style_button__C9H72 {
+            background: #ffcc00;
+            color: #000 !important;
+            padding: 8px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .navbar-toggler {
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .navbar-toggler-icon {
+            filter: invert(1);
+        }
+
+
+        @media (max-width: 991px) {
+            .navbar {
+                position: relative;
+            }
+
+            .navbar-brand img {
+                height: 120px;
+            }
+
+            .navbar-collapse {
+
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #030D43;
+                padding: 20px;
+                border-radius: 10px;
+                z-index: 1000;
+                margin-top: -25px;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            }
+
+            .btn-div {
+                margin-top: 5px;
+            }
+
+            body {
+                overflow-x: hidden;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .navbar-brand img {
+                height: 140px;
+            }
+        }
     </style>
 
 
 </head>
 
 <body class="__className_975d1f">
-    <section class="style_section__09_zn style_dark__R3RMO">
-        <div class="style_container__O7qie">
-            <div class="auth-card">
+    <header class="style_header__w9GaQ" style="background-color: #b4aaaa3d !important;">
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/new/logo1.png" alt="ADSVILLA">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item btn-div">
+                        <a class="style_button__C9H72" href="register.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="style_section__09_zn style_dark__R3RMO"
+        style="display: flex !important; flex-direction: column; align-items: center; justify-content: center; width: 100%; ">
+        <div class="style_container__O7qie"
+            style="width: 100%; display: flex; justify-content: center;  margin-top: 100px;">
+            <div class="auth-card" style="margin: 0 auto !important; float: none !important;">
                 <h2 style="color:var(--primary-color); text-align:center; margin-bottom:30px;">Create Account</h2>
 
                 <form action="#" class="auth-form">
                     <div class="input-row">
-                        <input type="text" placeholder="First Name" required>
-                        <input type="text" placeholder="Last Name" required>
+
+                        <div style="flex:1">
+                            <input type="text" id="firstName" placeholder="First Name" required>
+                            <div class="error-text">First name is required</div>
+                        </div>
+
+                        <div style="flex:1">
+                            <input type="text" id="lastName" placeholder="Last Name" required>
+                            <div class="error-text">Last name is required</div>
+                        </div>
+
                     </div>
 
-                    <input type="email" placeholder="Email Address" required>
 
-                    <select name="country" required class="ab">
-                        <option value="" disabled selected>Select Country</option>         
+                    <div>
+                        <input type="email" id="email" placeholder="Email Address" required>
+                        <div class="error-text">Please enter a valid email address</div>
+                    </div>
+
+                    <div>
+                        <select name="country" id="country" class="ab">
+                            <option value="" disabled selected>Select Country</option>
                             <option value="1">Aland Islands</option>
                             <option value="2">Albania</option>
                             <option value="3">Algeria</option>
@@ -470,32 +628,61 @@
                             <option value="252">YUGOSLAVIA</option>
                             <option value="253">Zambia</option>
                             <option value="254">Zimbabwe</option>
-                    
-                    </select>
+                        </select>
+                        <div class="error-text">Please select a country</div>
+                    </div>
 
-                    <input type="text" placeholder="Telegram Username (@username)" required>
-                    <input type="text" placeholder="Choose a Username" required>
+
+                    <div>
+                        <input type="text" id="telegram" placeholder="Telegram Username (@username)" required>
+                        <div class="error-text">Telegram username is required</div>
+                    </div>
+
+                    <div>
+                        <input type="text" id="username" placeholder="Choose a Username" required>
+                        <div class="error-text">Username is required</div>
+                    </div>
+
 
                     <div class="input-row">
-                        <input type="password" placeholder="Password" required>
-                        <input type="password" placeholder="Confirm Password" required>
-                    </div>
 
-                    <div class="captcha-box"
-                        style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
-                        <div id="captchaDisp"
-                            style="background:#fff; color:#000; padding:10px 20px; font-weight:bold; border-radius:4px; letter-spacing: 4px; user-select: none; min-width: 80px; text-align: center; font-style: italic; border: 1px solid #ccc;">
+                        <div style="flex:1">
+                            <input type="password" id="password" placeholder="Password" required>
+                            <div class="error-text">Password is required</div>
                         </div>
 
-                        <input type="text" id="userCaptcha" placeholder="Enter Captcha"
-                            style="margin-bottom:0; flex: 1;" required>
+                        <div style="flex:1">
+                            <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                            <div class="error-text">Passwords do not match</div>
+                        </div>
+
                     </div>
 
-                    <div class="terms-row" style="margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
-                        <input type="checkbox" id="terms" required style="width: auto; margin: 0;">
-                        <label for="terms" style="font-size:14px; color: #ccc;">I agree to the <a
-                                href="terms.html">Terms and Conditions</a></label>
+
+                    <div class="captcha-box">
+
+                        <div id="captchaDisp"
+                            style="background:#fff; color:#000; padding:11px 23px; font-weight:bold; border-radius:4px; letter-spacing:3px; user-select:none; min-width:40px; max-width: 120px; text-align:center; font-style:italic; border:1px solid #ccc;">
+                        </div>
+
+                        <div style="flex:1">
+                            <input type="text" id="userCaptcha" placeholder="Enter Captcha" required>
+                            <div class="error-text">Captcha does not match</div>
+                        </div>
+
                     </div>
+                    <div class="terms-wrapper">
+                        <div class="terms-row">
+                            <input type="checkbox" id="terms">
+                            <label for="terms">
+                                I agree to the <a href="terms.html" style="color: #840305;">Terms and Conditions</a>
+                            </label>
+                        </div>
+                        <div class="error-text">You must agree to the Terms and Conditions</div>
+                    </div>
+
+
+
 
                     <button type="submit" class="auth-btn">REGISTER</button>
                 </form>
@@ -510,30 +697,45 @@
         <div class="style_container__O7qie style_container__Xh6ZX">
             <div class="style_content__5GAo4">
                 <div class="style_logoArea__AaQE5">
-                    <div><img class="navbar-brand" style="width: 125px; height: auto; margin-top: 0%; padding: 0%; margin-left: 0% !important; padding-left: 0% !important;"
+                    <div><img class="navbar-brand"
+                            style="width: 125px; height: auto; margin-top: 0%; padding: 0%; margin-left: 0% !important; padding-left: 0% !important;"
                             src="images//new/logofoot.png"></div>
-                    <p class="style_text__Z44aT style_md__ZQhe4"><strong>Adsvilla — Earn Smarter, Earn
+                    <p class="style_text__Z44aT style_md__ZQhe4" style="color: #212529;"><strong>Adsvilla — Earn
+                            Smarter, Earn
                             Online.</strong></br>
                         Click, engage, and turn your spare time into real income from the comfort of home.</p>
                 </div>
-      
-                <p class="style_text__Z44aT style_md__ZQhe4">Copyright © ADSVILLA <span></span><span></span></br><a
-                        href="terms.html" style="color: blue; margin-left: -10px;">Terms and Conditions</a></p>
-                <div class="style_socialList__9gkGN">
-                    <div><a target="_blank" rel="noopener noreferrer" href="https://t.me/advillage"><img alt="Medium"
-                                loading="lazy" width="0" height="0" decoding="async" data-nimg="1" class=""
-                                style="color:transparent" src="images/connect/telegram.svg" /></a></div>
+
+                <p class="style_text__Z44aT style_md__ZQhe4" style="color: #212529;">Copyright © ADSVILLA
+                    <span></span><span></span><a href="terms.html" style="color: blue; margin-left: 25px;">Terms and
+                        Conditions</a></p>
+                <div class="style_socialList__9gkGN" style="justify-content: flex-start !important; gap: 6px; display: flex; margin-top: -10px;">
+                    <div><a target="_blank" rel="noopener noreferrer" href="https://t.me/advillage">
+                            <img alt="Telegram" loading="lazy" width="30" height="30"
+                                style="filter: none !important; color:transparent" src="images/connect/telegram.svg" />
+                        </a></div>
+
                     <div><a target="_blank" rel="noopener noreferrer"
-                            href="https://www.facebook.com/profile.php?id=61558580631344&mibextid=ZbWKwL"><img alt="X"
-                                loading="lazy" width="0" height="0" decoding="async" data-nimg="1" class=""
-                                style="color:transparent" src="images/new/Facebook_icon.png" /></a></div>
-                    <div><a target="_blank" rel="noopener noreferrer" href="https://x.com/adsvillanet"><img
-                                alt="Facebook" loading="lazy" width="0" height="0" decoding="async" data-nimg="1"
-                                class="" style="color:transparent" src="images//connect/x.svg" /></a></div>
+                            href="https://www.facebook.com/profile.php?id=61558580631344">
+                            <img alt="Facebook" loading="lazy" width="30" height="30"
+                                style="filter: none !important; color:transparent" src="images/new/Facebook_icon.png" />
+                        </a></div>
+
+                    <div><a target="_blank" rel="noopener noreferrer" href="https://x.com/adsvillanet">
+                            <img alt="X" loading="lazy" width="30" height="30"
+                                style="filter: none !important; color:transparent" src="images//connect/x.svg" />
+                        </a></div>
+
+                    <div><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@adsvillaofficial">
+                            <img alt="YouTube" loading="lazy" width="30" height="30"
+                                style="filter: none !important; color:transparent" src="images/new/youtube.png" />
+                        </a></div>
+
                     <div><a target="_blank" rel="noopener noreferrer"
-                            href="https://www.youtube.com/@adsvillaofficial"><img alt="Telegram" loading="lazy"
-                                width="0" height="0" decoding="async" data-nimg="1" class="" style="color:transparent"
-                                src="images/new/youtube.png" /></a></div>
+                            href="https://whatsapp.com/channel/0029VaSccAe84Om4CkJWDr3w">
+                            <img alt="WhatsApp" loading="lazy" width="30" height="30"
+                                style="filter: none !important; color:transparent" src="images/new/wp1.png" />
+                        </a></div>
                 </div>
             </div>
         </div>
@@ -545,7 +747,7 @@
             style="display:none" alt="script"
             src="https://www.facebook.com/tr?id=2515465071969410&amp;ev=PageView&amp;noscript=1" /></noscript>
 
-  
+
 
     <script>
         const observer = new IntersectionObserver((entries) => {
@@ -553,20 +755,20 @@
                 if (entry.isIntersecting) {
                     entry.target.classList.add('reveal-active');
                 } else {
-             
+
                     entry.target.classList.remove('reveal-active');
                 }
             });
         }, { threshold: 0.1 });
 
-       
+
         const elementsToAnimate = document.querySelectorAll('.reveal-left, .reveal-right, .reveal-box');
         elementsToAnimate.forEach((el) => observer.observe(el));
     </script>
     <script>
         const observerOptions = {
-            threshold: 0.15, 
-            rootMargin: "0px 0px -50px 0px" 
+            threshold: 0.15,
+            rootMargin: "0px 0px -50px 0px"
         };
 
         const observe = new IntersectionObserver((entries) => {
@@ -574,27 +776,27 @@
                 if (entry.isIntersecting) {
                     entry.target.classList.add('reveal-active1');
                 } else {
-                
+
                     entry.target.classList.remove('reveal-active1');
                 }
             });
         }, observerOptions);
 
-  
+
         document.querySelectorAll('.reveal-left1, .reveal-right1, .reveal-box1').forEach((el) => {
             observe.observe(el);
         });
     </script>
 
     <script>
-      
+
         let currentCaptchaCode = "";
 
-  
+
         function refreshCaptcha() {
             const chars = "23456789ABCDEFGHJKLMNPQRSTUVWXYZ";
             let code = "";
-            for (let i = 0; i < 5; i++) { 
+            for (let i = 0; i < 5; i++) {
                 code += chars.charAt(Math.floor(Math.random() * chars.length));
             }
             currentCaptchaCode = code;
@@ -622,6 +824,80 @@
 
             return true;
         };
+    </script>
+    <!-- validation script -->
+    <script>
+        function showError(input, message) {
+            const error = input.nextElementSibling;
+            error.innerText = message;
+            error.style.display = "block";
+            input.classList.add("input-error");
+        }
+
+        function clearError(input) {
+            const error = input.nextElementSibling;
+            error.style.display = "none";
+            input.classList.remove("input-error");
+        }
+
+        document.querySelector(".auth-form").addEventListener("submit", function (e) {
+            let isValid = true;
+
+            const inputs = this.querySelectorAll("input, select");
+
+            inputs.forEach(input => {
+                if (input.hasAttribute("required") && !input.value.trim()) {
+                    showError(input, "This field is required");
+                    isValid = false;
+                } else {
+                    clearError(input);
+                }
+            });
+
+            /* Email validation */
+            const email = document.getElementById("email");
+            if (email && !/^\S+@\S+\.\S+$/.test(email.value)) {
+                showError(email, "Enter a valid email address");
+                isValid = false;
+            }
+
+            /* Password match (Register only) */
+            const pass = document.getElementById("password");
+            const confirm = document.getElementById("confirmPassword");
+            if (pass && confirm && pass.value !== confirm.value) {
+                showError(confirm, "Passwords do not match");
+                isValid = false;
+            }
+
+            /* Captcha check */
+            const captchaInput = document.getElementById("userCaptcha");
+            if (captchaInput && captchaInput.value.trim().toUpperCase() !== currentCaptchaCode) {
+                showError(captchaInput, "Captcha does not match");
+                refreshCaptcha();
+                isValid = false;
+            }
+
+            if (!isValid) e.preventDefault();
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("click", function (event) {
+            const navbar = document.querySelector(".navbar-collapse");
+            const toggler = document.querySelector(".navbar-toggler");
+
+
+            if (navbar.classList.contains("show")) {
+
+
+                if (
+                    !navbar.contains(event.target) &&
+                    !toggler.contains(event.target)
+                ) {
+                    toggler.click(); // auto close
+                }
+            }
+        });
     </script>
 </body>
 
