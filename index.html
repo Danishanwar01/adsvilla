@@ -185,6 +185,25 @@
       font-size: 11px; 
     }
   }
+  .close-ad-btn {
+    position: absolute; top: 5px; right: 5px; background: rgba(0,0,0,0.6);
+    color: white; width: 20px; height: 20px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer; z-index: 10; font-size: 14px;
+  }
+
+  /* Overlay Style */
+  .ad-report-overlay, .ad-closed-msg {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.9); z-index: 20;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center; padding: 10px;
+  }
+
+  .ad-report-overlay .badge { cursor: pointer; font-size: 10px; }
+  .ad-report-overlay .badge:hover { background-color: #dc3545 !important; }
+  
+  .ad-closed-msg { color: #aaa; font-size: 12px; }
 </style>
 </head>
 
@@ -396,47 +415,99 @@
    
     </div>
     <div class="row g-2">
-         <div class="col-6 col-md-3">
-        <a href="https://jup.ag/tokens/7h7FjNZGZ54KJzUtvx2eS9u61HbPX8XZS8WjyQtrpump" class="text-decoration-none">
-          <div class="card h-100 ad-minimal-card">
-            <img src="https://storageimagedisplay.com/cti/98/4a/ea/984aea0590243673d8100824b542b2eb/1756662026.jpg" class="card-img-top" alt="Ad">
-            <div class="card-body p-2 text-center">
-              <span class="ad-text">The Meme Coin You've Been Waiting For! </span>
+       <div class="col-6 col-md-3 position-relative ad-wrapper">
+        <div class="card h-100 ad-minimal-card overflow-hidden position-relative">         
+          <div class="close-ad-btn" onclick="toggleReport(this)">×</div>
+          <div class="ad-report-overlay d-none">
+            <div class="report-content">
+              <p class="mb-1 fw-bold text-white" style="font-size: 12px;">Report Ad</p>
+              <div class="d-flex flex-wrap justify-content-center gap-1">
+                <span class="badge bg-secondary" onclick="closeAdFinal(this)">Violent</span>
+                <span class="badge bg-secondary" onclick="closeAdFinal(this)">Offensive</span>
+                <span class="badge bg-secondary" onclick="closeAdFinal(this)">Spam</span>
+              </div>
+              <button class="btn btn-sm text-info mt-2 p-0" style="font-size: 10px;" onclick="toggleReport(this, 'cancel')">Cancel</button>
             </div>
           </div>
-        </a>
+          <div class="ad-closed-msg d-none">Ad was closed</div>
+          <a href="https://jup.ag/tokens/7h7FjNZGZ54KJzUtvx2eS9u61HbPX8XZS8WjyQtrpump" class="text-decoration-none">
+            <img src="https://storageimagedisplay.com/cti/98/4a/ea/984aea0590243673d8100824b542b2eb/1756662026.jpg" class="card-img-top" alt="Ad">
+            <div class="card-body p-2 text-center">
+              <span class="ad-text">The Meme Coin You've Been Waiting For!</span>
+            </div>
+          </a>
+        </div>
       </div>
-      <div class="col-6 col-md-3">
-        <a href="https://jup.ag/tokens/7h7FjNZGZ54KJzUtvx2eS9u61HbPX8XZS8WjyQtrpump" class="text-decoration-none">
-          <div class="card h-100 ad-minimal-card">
+        <div class="col-6 col-md-3 position-relative ad-wrapper">
+        <div class="card h-100 ad-minimal-card overflow-hidden position-relative">         
+          <div class="close-ad-btn" onclick="toggleReport(this)">×</div>
+          <div class="ad-report-overlay d-none">
+            <div class="report-content">
+              <p class="mb-1 fw-bold text-white" style="font-size: 12px;">Report Ad</p>
+              <div class="d-flex flex-wrap justify-content-center gap-1">
+                <span class="badge bg-secondary" onclick="closeAdFinal(this)">Violent</span>
+                <span class="badge bg-secondary" onclick="closeAdFinal(this)">Offensive</span>
+                <span class="badge bg-secondary" onclick="closeAdFinal(this)">Spam</span>
+              </div>
+              <button class="btn btn-sm text-info mt-2 p-0" style="font-size: 10px;" onclick="toggleReport(this, 'cancel')">Cancel</button>
+            </div>
+          </div>
+          <div class="ad-closed-msg d-none">Ad was closed</div>
+          <a href="https://jup.ag/tokens/7h7FjNZGZ54KJzUtvx2eS9u61HbPX8XZS8WjyQtrpump" class="text-decoration-none">
             <img src="https://storageimagedisplay.com/cti/11/ca/f4/11caf4e942c5d5d5d04515433ce3d147/1756566718.jpg" class="card-img-top" alt="Ad">
             <div class="card-body p-2 text-center">
               <span class="ad-text">Check Out this New Solana MemeCoin!</span>
             </div>
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
-       <div class="col-6 col-md-3">
-        <a href="https://jup.ag/tokens/7h7FjNZGZ54KJzUtvx2eS9u61HbPX8XZS8WjyQtrpump" class="text-decoration-none">
-          <div class="card h-100 ad-minimal-card">
+       <div class="col-6 col-md-3 position-relative ad-wrapper">
+        <div class="card h-100 ad-minimal-card overflow-hidden position-relative">         
+          <div class="close-ad-btn" onclick="toggleReport(this)">×</div>
+          <div class="ad-report-overlay d-none">
+            <div class="report-content">
+              <p class="mb-1 fw-bold text-white" style="font-size: 12px;">Report Ad</p>
+              <div class="d-flex flex-wrap justify-content-center gap-1">
+                <span class="badge bg-secondary" onclick="closeAdFinal(this)">Violent</span>
+                <span class="badge bg-secondary" onclick="closeAdFinal(this)">Offensive</span>
+                <span class="badge bg-secondary" onclick="closeAdFinal(this)">Spam</span>
+              </div>
+              <button class="btn btn-sm text-info mt-2 p-0" style="font-size: 10px;" onclick="toggleReport(this, 'cancel')">Cancel</button>
+            </div>
+          </div>
+          <div class="ad-closed-msg d-none">Ad was closed</div>
+          <a href="https://jup.ag/tokens/7h7FjNZGZ54KJzUtvx2eS9u61HbPX8XZS8WjyQtrpump" class="text-decoration-none">
             <img src="https://storageimagedisplay.com/cti/18/a9/3a/18a93a23640bef9e9db0605254fda42d/1756661839.jpg" class="card-img-top" alt="Ad">
             <div class="card-body p-2 text-center">
               <span class="ad-text">Join The Meme Revolution! Buy Now!</span>
             </div>
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
-      <div class="col-6 col-md-3">
-        <a href="https://jup.ag/tokens/7h7FjNZGZ54KJzUtvx2eS9u61HbPX8XZS8WjyQtrpump" class="text-decoration-none">
-          <div class="card h-100 ad-minimal-card">
+       <div class="col-6 col-md-3 position-relative ad-wrapper">
+        <div class="card h-100 ad-minimal-card overflow-hidden position-relative">         
+          <div class="close-ad-btn" onclick="toggleReport(this)">×</div>
+          <div class="ad-report-overlay d-none">
+            <div class="report-content">
+              <p class="mb-1 fw-bold text-white" style="font-size: 12px;">Report Ad</p>
+              <div class="d-flex flex-wrap justify-content-center gap-1">
+                <span class="badge bg-secondary" onclick="closeAdFinal(this)">Violent</span>
+                <span class="badge bg-secondary" onclick="closeAdFinal(this)">Offensive</span>
+                <span class="badge bg-secondary" onclick="closeAdFinal(this)">Spam</span>
+              </div>
+              <button class="btn btn-sm text-info mt-2 p-0" style="font-size: 10px;" onclick="toggleReport(this, 'cancel')">Cancel</button>
+            </div>
+          </div>
+          <div class="ad-closed-msg d-none">Ad was closed</div>
+          <a href="https://jup.ag/tokens/7h7FjNZGZ54KJzUtvx2eS9u61HbPX8XZS8WjyQtrpump" class="text-decoration-none">
             <img src="https://storageimagedisplay.com/cti/98/cf/e7/98cfe7688276f1513feb6852014bbd27/1756662145.jpg" class="card-img-top" alt="Ad">
             <div class="card-body p-2 text-center">
               <span class="ad-text">I Am AdZilla. Byy My Meme Coin Now!</span>
             </div>
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
-
+      </div>
     </div>
   </div>
 </section>
@@ -1050,7 +1121,25 @@ document.addEventListener("click", function (event) {
     }
 });
 </script>
+<script>
+function toggleReport(btn, mode) {
+    const card = btn.closest('.ad-minimal-card');
+    const overlay = card.querySelector('.ad-report-overlay');
+    if(mode === 'cancel') {
+        overlay.classList.add('d-none');
+    } else {
+        overlay.classList.remove('d-none');
+    }
+}
 
+function closeAdFinal(badge) {
+    const card = badge.closest('.ad-minimal-card');
+    card.querySelector('.ad-report-overlay').classList.add('d-none');
+    card.querySelector('.ad-closed-msg').classList.remove('d-none');
+    // 3 second baad card ko hide karne ke liye
+    setTimeout(() => { card.closest('.ad-wrapper').style.display = 'none'; }, 2000);
+}
+</script>
 </body>
 
 
