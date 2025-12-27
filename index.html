@@ -136,6 +136,19 @@
     top: 0;
     z-index: 1000;
 }
+@media (max-width: 991px) {
+    .navbar-collapse {
+        margin-top: -50px !important; 
+        padding-top: 5px !important; 
+    }
+    .navbar-nav {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+    .nav-item {
+        margin-bottom: 5px !important;
+    }
+}
 </style>
 </head>
 
@@ -150,7 +163,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav" >
                 <ul class="navbar-nav ms-auto align-items-lg-center">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
