@@ -2576,9 +2576,9 @@
     .style_referral__12bcr .style_imageWrapper__NlyFA {
         position: relative; 
         width: 60%;       
-        height: 200px !important; 
+        height: 180px !important; 
         min-height: 100px;  
-        margin: 20px auto;  
+        margin: 50px auto;  
         left: 0; 
         top: 100px !important;
         right: 0;
@@ -2589,7 +2589,8 @@
     }
 
     .style_image__LHCHQ {
-        max-width: 200px; /* Mobile pe image ki size ki limit */
+        max-width: 200px; 
+     
     }
 
     /* Mobile Active State Override */
